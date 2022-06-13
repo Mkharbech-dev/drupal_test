@@ -1,0 +1,37 @@
+uuid: b30df31f-a841-4d7d-afb6-26f535a9f185
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.formation_zip.field_media_file
+    - media.type.formation_zip
+  module:
+    - file
+id: media.formation_zip.default
+targetEntityType: media
+bundle: formation_zip
+mode: default
+content:
+  created:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_file:
+    type: file_default
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

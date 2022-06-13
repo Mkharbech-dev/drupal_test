@@ -1,0 +1,16 @@
+uuid: 20fe7d23-35fe-4cc0-95d9-79ba7f93588a
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hzgvcRgZHltqWf8hBmttoWh95tCJoPL25lPq9YSIRsY
+id: video
+label: Vidéo
+description: 'Un fichier vidéo hébergé localement.'
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_video_file
+field_map:
+  name: name

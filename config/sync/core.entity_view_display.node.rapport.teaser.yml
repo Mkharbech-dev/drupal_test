@@ -1,0 +1,44 @@
+uuid: 0a707ffb-0294-4fbb-892f-a89ac4a822ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.rapport.body
+    - field.field.node.rapport.field_categorie
+    - field.field.node.rapport.field_fichier
+    - field.field.node.rapport.field_image
+    - field.field.node.rapport.layout_builder__layout
+    - node.type.rapport
+  module:
+    - text
+    - user
+id: node.rapport.teaser
+targetEntityType: node
+bundle: rapport
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_categorie: true
+  field_fichier: true
+  field_image: true
+  langcode: true
+  layout_builder__layout: true

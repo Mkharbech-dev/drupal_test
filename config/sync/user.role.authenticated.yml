@@ -1,0 +1,32 @@
+uuid: c1233caa-d114-419e-8c46-4c81c3cb8f8c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.format_formation
+  module:
+    - comment
+    - contact
+    - filter
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'use text format format_formation'
+  - 'view media'

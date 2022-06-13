@@ -1,0 +1,18 @@
+uuid: 473e6b82-a520-4004-8175-b19703a1a35c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.revue
+id: node.revue.title
+field_name: title
+entity_type: node
+bundle: revue
+label: 'N° d''édition'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

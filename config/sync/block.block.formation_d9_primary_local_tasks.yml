@@ -1,0 +1,22 @@
+uuid: d8f498b9-e301-4a15-bfde-3d40accddec3
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: ra6f6AXShbzKP9r6uPc9cfCx2KuomlPqmt1WWPUuDf0
+id: formation_d9_primary_local_tasks
+theme: formation_d9
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

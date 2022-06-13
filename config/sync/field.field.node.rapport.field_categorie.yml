@@ -1,0 +1,29 @@
+uuid: 0582f135-98a9-4ac7-b406-386ec393c054
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie
+    - node.type.rapport
+    - taxonomy.vocabulary.categories
+id: node.rapport.field_categorie
+field_name: field_categorie
+entity_type: node
+bundle: rapport
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

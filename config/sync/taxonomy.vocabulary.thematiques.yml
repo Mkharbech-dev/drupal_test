@@ -1,0 +1,8 @@
+uuid: b2af4e54-f0f1-4384-940f-b3fd195befda
+langcode: fr
+status: true
+dependencies: {  }
+name: Thématiques
+vid: thematiques
+description: 'Thématiques des revues'
+weight: 0

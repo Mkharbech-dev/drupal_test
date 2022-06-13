@@ -1,0 +1,29 @@
+uuid: cba3de05-90a6-41e3-bafb-23851402372d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zip
+    - media.type.formation_zip
+    - node.type.divers
+id: node.divers.field_zip
+field_name: field_zip
+entity_type: node
+bundle: divers
+label: Zip
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      formation_zip: formation_zip
+    sort:
+      field: mid
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

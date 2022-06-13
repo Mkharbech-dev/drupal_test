@@ -1,0 +1,27 @@
+uuid: e431564a-6253-4eaa-83a1-061de297d8a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.formation_zip
+  module:
+    - file
+id: media.formation_zip.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: formation_zip
+label: Fichier
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'Archives-[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip rar tar'
+  max_filesize: '2 MB'
+  description_field: true
+field_type: file

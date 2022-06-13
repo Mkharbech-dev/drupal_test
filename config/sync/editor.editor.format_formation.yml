@@ -1,0 +1,62 @@
+uuid: 1e721a2d-de94-4a87-9e1c-e01f78f4ba6e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.format_formation
+  module:
+    - ckeditor
+format: format_formation
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formats
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - JustifyLeft
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Liens
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listes
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+        -
+          name: Outils
+          items:
+            - Source
+        -
+          name: Formation
+          items:
+            - Format
+            - '-'
+            - Styles
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "h1.titre|Titre\r\nh4.titre|Sous-Titre"
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

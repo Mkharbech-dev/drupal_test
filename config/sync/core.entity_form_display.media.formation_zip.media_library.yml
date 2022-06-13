@@ -1,0 +1,21 @@
+uuid: 59c462d5-e2da-4e53-88ef-51f07c1355c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.formation_zip.field_media_file
+    - media.type.formation_zip
+id: media.formation_zip.media_library
+targetEntityType: media
+bundle: formation_zip
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_file: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

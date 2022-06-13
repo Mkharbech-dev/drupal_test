@@ -1,0 +1,21 @@
+uuid: 3df3a7b9-8cd1-47ba-91d0-395e4f301067
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_azert
+    - node.type.article
+id: node.article.field_azert
+field_name: field_azert
+entity_type: node
+bundle: article
+label: azert
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 9114b47b-44d8-4b51-beee-a5b79698174e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: jGkBUnwRXYacHWTR8hjjwn_a_PRM-Xj_xSHoB0WIfEo
+id: formation_d9_syndicate
+theme: formation_d9
+region: sidebar_first
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 1c6e5188-e916-4f14-a480-79499103f8f9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
+id: formation_d9_content
+theme: formation_d9
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

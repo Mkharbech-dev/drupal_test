@@ -1,0 +1,27 @@
+uuid: 2c36766e-d217-4f5c-8621-337e9d8851dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichier
+    - node.type.divers
+  module:
+    - file
+id: node.divers.field_fichier
+field_name: field_fichier
+entity_type: node
+bundle: divers
+label: 'Fichier autre que Zip'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'Divers-[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

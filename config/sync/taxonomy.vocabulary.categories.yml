@@ -1,0 +1,8 @@
+uuid: ca509aed-3991-4d21-9ca4-0c974e708c8c
+langcode: fr
+status: true
+dependencies: {  }
+name: Catégories
+vid: categories
+description: 'Catégories Rapports'
+weight: 0

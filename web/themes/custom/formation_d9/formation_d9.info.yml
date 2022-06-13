@@ -1,0 +1,9 @@
+name: theme d9
+type: theme
+base theme: bartik
+version: "9.x-1.0"
+core: "8.x"
+core_version_requirement: ^8 || ^9
+package: Formation
+description: "theme crée pour la formation"
+screenshot: logo.png

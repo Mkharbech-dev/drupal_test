@@ -1,0 +1,128 @@
+uuid: 5f18dea4-78d5-449e-8339-27451d9bfe8a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.formation_zip
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.divers
+    - node.type.page
+    - node.type.rapport
+    - node.type.revue
+    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.thematiques
+    - workflows.workflow.editorial
+    - workflows.workflow.formation_workflow
+  module:
+    - block_content
+    - contact
+    - content_moderation
+    - content_translation
+    - file
+    - filter
+    - image
+    - media
+    - node
+    - path
+    - quickedit
+    - responsive_image
+    - scheduler
+    - search
+    - shortcut
+    - taxonomy
+    - toolbar
+    - tour
+id: redacteur
+label: Rédacteur
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'administer contact forms'
+  - 'administer image styles'
+  - 'administer responsive images'
+  - 'change own username'
+  - 'create article content'
+  - 'create audio media'
+  - 'create content translations'
+  - 'create divers content'
+  - 'create document media'
+  - 'create formation_zip media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create rapport content'
+  - 'create remote_video media'
+  - 'create revue content'
+  - 'create terms in categories'
+  - 'create terms in tags'
+  - 'create terms in thematiques'
+  - 'create url aliases'
+  - 'create video media'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any divers content'
+  - 'edit any document media'
+  - 'edit any formation_zip media'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any rapport content'
+  - 'edit any remote_video media'
+  - 'edit any revue content'
+  - 'edit any video media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own divers content'
+  - 'edit own document media'
+  - 'edit own formation_zip media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own rapport content'
+  - 'edit own remote_video media'
+  - 'edit own revue content'
+  - 'edit own video media'
+  - 'edit terms in categories'
+  - 'edit terms in tags'
+  - 'edit terms in thematiques'
+  - 'schedule publishing of nodes'
+  - 'switch shortcut sets'
+  - 'translate any entity'
+  - 'translate block_content'
+  - 'translate categories taxonomy_term'
+  - 'translate editable entities'
+  - 'translate revue node'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use advanced search'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition create_new_draft'
+  - 'use formation_workflow transition create_new_draft'
+  - 'use formation_workflow transition premiere_lecture'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view any unpublished content'
+  - 'view divers revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view rapport revisions'
+  - 'view revue revisions'
+  - 'view scheduled content'

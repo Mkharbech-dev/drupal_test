@@ -1,0 +1,20 @@
+formation_d9.bonjour:
+  path: '/exemple/{nom}'
+  defaults:
+    _controller: '\Drupal\formation_d9\Controller\DefaultController::bonjour'
+    nom: null
+  requirements:
+    _permission: 'access content'
+    nom: '[a-zA-z]+'
+
+route_callbacks:
+  - '\Drupal\formation_d9\Routing\CustomRoutes::routes'
+
+formation_d9.formulaire:
+  path: '/user-message'
+  defaults:
+    _form: '\Drupal\formation_d9\Form\DefaultForm'
+    _title: 'Message'
+  requirements:
+    _permission: 'access form content'
+

@@ -1,0 +1,22 @@
+uuid: 5884cb21-c52d-4e60-9cd4-2607ea559624
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rapport
+id: node.rapport.promote
+field_name: promote
+entity_type: node
+bundle: rapport
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

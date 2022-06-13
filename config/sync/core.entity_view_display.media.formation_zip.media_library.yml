@@ -1,0 +1,31 @@
+uuid: ab6bc6d4-eb4f-4f67-8e0a-2798df0e4585
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.formation_zip.field_media_file
+    - image.style.medium
+    - media.type.formation_zip
+  module:
+    - image
+id: media.formation_zip.media_library
+targetEntityType: media
+bundle: formation_zip
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_file: true
+  langcode: true
+  name: true
+  uid: true

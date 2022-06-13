@@ -1,0 +1,14 @@
+uuid: 04b3ccaf-bb86-4863-b4f0-a0a9110b4680
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.responsable_redaction
+  module:
+    - user
+id: user_add_role_action.responsable_redaction
+label: 'Ajouter le rôle Responsable rédaction aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: responsable_redaction

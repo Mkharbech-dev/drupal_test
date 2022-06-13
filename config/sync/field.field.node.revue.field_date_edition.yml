@@ -1,0 +1,21 @@
+uuid: c5baae6b-8ab2-4607-b74f-1473ef164529
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_edition
+    - node.type.revue
+  module:
+    - datetime
+id: node.revue.field_date_edition
+field_name: field_date_edition
+entity_type: node
+bundle: revue
+label: 'Date d''édition'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

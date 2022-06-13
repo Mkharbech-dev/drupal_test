@@ -1,0 +1,123 @@
+<?php
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * implemplementation Hook_help.
+ */
+function formation_d9_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+      case 'help.page.formation_d9':
+        return '<p>'. t('Ce module a été crée dans le cadre de la formation drupal 9') . '</p>';
+    }
+}
+
+/**
+ * Redirect when a user has just logged in.
+ *
+ * @param $account
+ */
+function formation_d9_user_login($account)
+{
+    \Drupal::messenger()->addMessage(t('Salut %name! Bienvenue sur notre site',
+      ['%name' => $account->getDisplayName()]));
+
+    //$response = new RedirectResponse(Url::fromRoute('system.admin_content')->toString());
+    //$response->send();
+
+
+}
+
+/**
+ * Alter the countries list.
+ *
+ * @param &$countries
+ */
+function formation_d9_countries_alter(&$countries)
+{
+    $countries['FD'] = 'Formation Drupal8';
+}
+
+function formation_d9_preprocess_html(&$variables)
+{
+    $messages = [
+    'Default message',
+  ];
+
+    $module_handler = \Drupal::moduleHandler();
+
+    $result = $module_handler->invokeAll('formation_messages');
+    $messages[] = $result;
+
+    $module_handler->alter('formation_messages', $messages);
+
+    if (!empty($messages)) {
+        foreach ($messages as $message) {
+            \Drupal::messenger()->addMessage($message);
+        }
+    }
+}
+
+/**
+ * Implements hook_formation_messages().
+ */
+function formation_d9_formation_messages()
+{
+    \Drupal::messenger()->addMessage('Event hook Message');
+
+    return;
+}
+
+/**
+ * Implements hook_formation_messages_alter().
+ */
+function formation_d9_formation_messages_alter(&$messages)
+{
+    $messages[] = 'Alter hook message';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function formation_d9_form_formation_d9_default_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  /*
+  $form['objet'] = [
+         '#type' => 'radios',
+         '#title' => t('Objet'),
+         '#default_value' => '1',
+         '#options' => [
+             '1' => t("Demande d'information"),
+             '2' => t('Reclamation'),
+         ],
+     ];
+  */
+    // Perform alterations.
+    $form['#submit'][] = 'formation_d9_form_submit';
+
+    // Perform validation.
+    $form['#validate'][] = 'formation_d9_form_validate';
+}
+
+function formation_d9_form_submit(&$form, FormStateInterface $form_state)
+{
+    \Drupal::messenger()->addMessage(
+        t('Bonjour @nom, votre message est envoyé!!!',
+            ['@nom' => $form_state->getValue('nom')]
+        ));
+
+}
+
+function formation_d9_form_validate(&$form, FormStateInterface $form_state)
+{
+    if (strlen($form_state->getValue('message')) < 1) {
+        $form_state->setErrorByName(
+                'message',
+                t('Merci de préciser votre message!')
+            );
+    }
+}

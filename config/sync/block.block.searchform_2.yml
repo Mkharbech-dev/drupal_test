@@ -1,0 +1,23 @@
+uuid: cc5e885f-099e-44f8-ab58-4408b03207f3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tara
+_core:
+  default_config_hash: H4fy02EjLoQ5iUOTd1faLDGjDA-fRuHMMevrKnv9Pdo
+id: searchform_2
+theme: tara
+region: search_box
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

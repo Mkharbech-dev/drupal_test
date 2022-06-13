@@ -1,0 +1,14 @@
+uuid: c48edafd-aad4-4405-8f8e-bffffd95db0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.redacteur_en_chef
+  module:
+    - user
+id: user_add_role_action.redacteur_en_chef
+label: 'Ajouter le rôle Rédacteur en chef aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: redacteur_en_chef

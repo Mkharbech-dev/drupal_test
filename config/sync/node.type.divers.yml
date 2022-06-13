@@ -1,0 +1,18 @@
+uuid: 5b16f856-a0d5-4b3b-aebb-e9b9300a0d67
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Divers
+type: divers
+description: 'Pour les archives et autre type de document pdf,doc, ou txt'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

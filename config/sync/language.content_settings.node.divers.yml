@@ -1,0 +1,11 @@
+uuid: 20cd22e8-08b3-4771-88e8-84aae7da0a3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.divers
+id: node.divers
+target_entity_type_id: node
+target_bundle: divers
+default_langcode: site_default
+language_alterable: false

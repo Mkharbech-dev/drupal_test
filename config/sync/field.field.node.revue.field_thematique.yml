@@ -1,0 +1,29 @@
+uuid: adcbd98c-ddd2-48b5-b09a-c6d80c5e8d47
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematique
+    - node.type.revue
+    - taxonomy.vocabulary.thematiques
+id: node.revue.field_thematique
+field_name: field_thematique
+entity_type: node
+bundle: revue
+label: Thématique
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thematiques: thematiques
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

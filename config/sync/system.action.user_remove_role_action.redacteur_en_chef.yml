@@ -1,0 +1,14 @@
+uuid: f1f0d763-fd76-4870-88dd-b8cec554a66f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.redacteur_en_chef
+  module:
+    - user
+id: user_remove_role_action.redacteur_en_chef
+label: 'Enlever le rôle Rédacteur en chef des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: redacteur_en_chef

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: fr
+uuid: fcb7f4f2-e16b-464b-ba79-4bd3d9ddf479
+name: 'Formation - Drupal 9'
+mail: a.rharrab@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: fr

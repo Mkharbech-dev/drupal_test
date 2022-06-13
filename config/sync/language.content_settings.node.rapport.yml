@@ -1,0 +1,11 @@
+uuid: 851a6c8b-a030-4d27-9cab-6c3f8ce2f903
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rapport
+id: node.rapport
+target_entity_type_id: node
+target_bundle: rapport
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 67298694-7420-4387-bcca-9790e564c7cc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - olivero
+_core:
+  default_config_hash: kF9mVmsseaqxC_a3r0oTNT2MOdiEdr9-6lMUfIa18eI
+id: olivero_search_form_wide
+theme: olivero
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche (large)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

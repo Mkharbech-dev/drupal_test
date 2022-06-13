@@ -1,0 +1,70 @@
+uuid: bcda37a1-1fc3-437d-b239-c5c09e90d72c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.formation_zip
+    - node.type.page
+    - node.type.revue
+  module:
+    - content_moderation
+id: formation_workflow
+label: 'Formation Workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: 0
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+    relecture_redacteur_en_chef:
+      label: 'Relecture rédacteur en chef'
+      weight: 2
+      published: false
+      default_revision: false
+    validation_responsable:
+      label: 'Validation résponsable'
+      weight: 3
+      published: false
+      default_revision: false
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+        - relecture_redacteur_en_chef
+      to: draft
+      weight: -2
+    deuxieme_lecture:
+      label: 'Deuxième lecture'
+      from:
+        - relecture_redacteur_en_chef
+      to: validation_responsable
+      weight: 0
+    premiere_lecture:
+      label: 'Première lecture'
+      from:
+        - draft
+        - relecture_redacteur_en_chef
+        - validation_responsable
+      to: relecture_redacteur_en_chef
+      weight: -1
+    publication:
+      label: Publication
+      from:
+        - validation_responsable
+      to: published
+      weight: 1
+  entity_types:
+    media:
+      - formation_zip
+    node:
+      - page
+      - revue
+  default_moderation_state: draft

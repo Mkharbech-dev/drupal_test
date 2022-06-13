@@ -1,0 +1,8 @@
+formation_d9.bonjour:
+  title: Bonjour!
+  description: 'Menu vers la page - Bonjour'
+  menu_name: main
+  route_name: formation_d9.bonjour
+  expanded: TRUE
+  parent: main
+  weight: 100

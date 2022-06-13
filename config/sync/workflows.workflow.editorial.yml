@@ -1,0 +1,80 @@
+uuid: c744dcba-bdee-40a3-93b6-ece19fea3740
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.rapport
+  module:
+    - content_moderation
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Éditorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archivé
+      weight: 1
+      published: false
+      default_revision: true
+    draft:
+      label: Brouillon
+      weight: -2
+      published: false
+      default_revision: false
+    published:
+      label: Publié
+      weight: 0
+      published: true
+      default_revision: true
+    relecture:
+      label: Relecture
+      weight: -1
+      published: false
+      default_revision: false
+  transitions:
+    a_valider:
+      label: 'A valider'
+      from:
+        - draft
+        - published
+        - relecture
+      to: relecture
+      weight: 5
+    archive:
+      label: Archiver
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restaurer à Brouillon'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restaurer
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Créer un Nouveau Brouillon'
+      from:
+        - draft
+      to: draft
+      weight: 0
+    valide:
+      label: Validé
+      from:
+        - relecture
+      to: published
+      weight: 6
+  entity_types:
+    node:
+      - article
+      - rapport
+  default_moderation_state: draft

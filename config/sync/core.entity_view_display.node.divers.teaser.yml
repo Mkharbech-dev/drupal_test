@@ -1,0 +1,35 @@
+uuid: 39e2c1dd-29d5-4d78-a351-54785fa38297
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.divers.body
+    - field.field.node.divers.field_fichier
+    - field.field.node.divers.field_zip
+    - node.type.divers
+  module:
+    - text
+    - user
+id: node.divers.teaser
+targetEntityType: node
+bundle: divers
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fichier: true
+  field_zip: true
+  langcode: true

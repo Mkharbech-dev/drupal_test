@@ -1,0 +1,45 @@
+uuid: b086673b-0542-411f-a39d-9e1c965c1ac2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.rapport
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.rapport.field_image
+field_name: field_image
+entity_type: node
+bundle: rapport
+label: 'Image d''entête'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: 900x600
+  min_resolution: 450x250
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

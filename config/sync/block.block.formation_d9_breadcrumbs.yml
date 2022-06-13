@@ -1,0 +1,22 @@
+uuid: e4882a28-0017-452e-9fe7-4c79303a9940
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
+id: formation_d9_breadcrumbs
+theme: formation_d9
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

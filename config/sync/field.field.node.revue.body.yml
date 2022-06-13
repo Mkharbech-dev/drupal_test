@@ -1,0 +1,23 @@
+uuid: 0b74a94e-8e54-4ac3-a342-c34ba2be155b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.revue
+  module:
+    - text
+id: node.revue.body
+field_name: body
+entity_type: node
+bundle: revue
+label: Résumé
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,20 @@
+uuid: 178e62a4-e1dd-4a43-a587-9d6b454c4e21
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: formation_d9_page_title
+theme: formation_d9
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

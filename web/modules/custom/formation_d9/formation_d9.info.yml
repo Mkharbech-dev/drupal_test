@@ -1,0 +1,7 @@
+name: Module Formation
+type: module
+version: '9.x-1.0'
+core: '8.x'
+core_version_requirement: ^8 || ^9
+package: Formation D9
+description: "Module crée pour la formation drupal 9"

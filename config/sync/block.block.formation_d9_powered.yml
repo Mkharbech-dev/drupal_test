@@ -1,0 +1,22 @@
+uuid: ec356fcc-fb98-4856-b0ce-7e9baed57bc5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: 5kL_iZM_xia3Z8bgsyiZgQphxMGhI8gt2HYo8r5Z7OE
+id: formation_d9_powered
+theme: formation_d9
+region: sidebar_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

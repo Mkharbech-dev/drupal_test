@@ -1,0 +1,22 @@
+uuid: 5417a8a8-3262-486f-b9d5-0c12a961dc9f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.formation_bloc
+    - field.field.block_content.formation_bloc.field_taxo
+id: block_content.formation_bloc.default
+targetEntityType: block_content
+bundle: formation_bloc
+mode: default
+content:
+  field_taxo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

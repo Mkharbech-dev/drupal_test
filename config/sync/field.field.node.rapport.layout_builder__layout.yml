@@ -1,0 +1,21 @@
+uuid: 52fd5f68-c60c-412c-8ced-2b01f4f6ef45
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.rapport
+  module:
+    - layout_builder
+id: node.rapport.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: rapport
+label: Affichage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

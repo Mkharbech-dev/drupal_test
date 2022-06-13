@@ -1,0 +1,20 @@
+uuid: 68841c6d-d9c5-4d77-b30c-6ac214073865
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_thematique
+field_name: field_thematique
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

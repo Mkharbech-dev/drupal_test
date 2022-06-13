@@ -1,0 +1,19 @@
+uuid: bf7fef52-d939-4da9-a165-7f4d315f9a54
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_azert
+field_name: field_azert
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: cb04685a-ae28-42f9-9077-085331bc7179
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - formation_d9
+id: formation_d9_pieddepage
+theme: formation_d9
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pied de page'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

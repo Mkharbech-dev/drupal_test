@@ -1,0 +1,46 @@
+uuid: 2119bbec-8eaf-4147-b104-d593daf88826
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.formation_zip.field_media_file
+    - media.type.formation_zip
+  module:
+    - file
+id: media.formation_zip.default
+targetEntityType: media
+bundle: formation_zip
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 160
+      placeholder: 'Titre du fichier Zip'
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  uid: true

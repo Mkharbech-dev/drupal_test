@@ -1,0 +1,22 @@
+uuid: 1fa90d85-ab5b-4b8b-bda1-ab9c4ac95ee3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.divers
+id: node.divers.promote
+field_name: promote
+entity_type: node
+bundle: divers
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

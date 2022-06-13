@@ -1,0 +1,8 @@
+uuid: a0945e07-cbe7-4fed-8897-ef4bfb4c4d22
+langcode: fr
+status: true
+dependencies: {  }
+id: formation_bloc
+label: 'Formation Bloc'
+revision: 0
+description: 'Un type de bloc pour la formation'

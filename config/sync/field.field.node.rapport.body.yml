@@ -1,0 +1,23 @@
+uuid: 87862426-1623-4ab7-9112-736221c04670
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rapport
+  module:
+    - text
+id: node.rapport.body
+field_name: body
+entity_type: node
+bundle: rapport
+label: Déscription
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

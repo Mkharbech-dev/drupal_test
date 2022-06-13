@@ -1,0 +1,23 @@
+uuid: e953541a-a50b-4f41-bf8d-578b0e033c8f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: WcXqPc7NoExO03VwGjmiiEkqTr7N2YqKzsq9Bz9Orh8
+id: formation_d9_search_form_narrow
+theme: formation_d9
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

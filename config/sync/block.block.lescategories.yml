@@ -1,0 +1,21 @@
+uuid: 7ebc36f3-306f-428e-9fd1-72b0de0adf9a
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bartik
+id: lescategories
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'block_content:5b23961c-e274-4c93-b7a2-35a54e384036'
+settings:
+  id: 'block_content:5b23961c-e274-4c93-b7a2-35a54e384036'
+  label: 'Les catégories'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

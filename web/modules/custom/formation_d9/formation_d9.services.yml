@@ -1,0 +1,5 @@
+services:
+  formation_d9.formation_service:
+    class: Drupal\formation_d9\services\FormationService
+    arguments: ['@entity_type.manager']
+

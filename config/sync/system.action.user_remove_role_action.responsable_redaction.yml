@@ -1,0 +1,14 @@
+uuid: 774dd0e5-6731-4a0b-93c7-48ab2e3b99a5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.responsable_redaction
+  module:
+    - user
+id: user_remove_role_action.responsable_redaction
+label: 'Enlever le rôle Responsable rédaction des utilisateurs sélectionnés'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: responsable_redaction

@@ -1,0 +1,18 @@
+uuid: 17da6292-82a9-4ff7-bd07-89e54c8e3121
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rapport
+id: node.rapport.title
+field_name: title
+entity_type: node
+bundle: rapport
+label: 'Title de rapport'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

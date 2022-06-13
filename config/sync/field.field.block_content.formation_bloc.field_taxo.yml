@@ -1,0 +1,29 @@
+uuid: 466e5cbd-9edb-468a-9203-76bcc60918ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.formation_bloc
+    - field.storage.block_content.field_taxo
+    - taxonomy.vocabulary.categories
+id: block_content.formation_bloc.field_taxo
+field_name: field_taxo
+entity_type: block_content
+bundle: formation_bloc
+label: Taxo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

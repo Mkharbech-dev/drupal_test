@@ -1,0 +1,27 @@
+uuid: 6f83284f-c74e-4553-9923-769f6288b5b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichier
+    - node.type.revue
+  module:
+    - file
+id: node.revue.field_fichier
+field_name: field_fichier
+entity_type: node
+bundle: revue
+label: 'Revue téléchargeable'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'Revues-[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

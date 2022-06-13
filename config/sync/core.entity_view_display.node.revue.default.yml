@@ -1,0 +1,71 @@
+uuid: 93a00044-cf8f-4a7e-9e6b-7f09d3ac9e16
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.revue.body
+    - field.field.node.revue.field_date_edition
+    - field.field.node.revue.field_fichier
+    - field.field.node.revue.field_image
+    - field.field.node.revue.field_thematique
+    - node.type.revue
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.revue.default
+targetEntityType: node
+bundle: revue
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date_edition:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fichier:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_thematique:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true

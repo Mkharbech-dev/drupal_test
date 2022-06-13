@@ -1,0 +1,25 @@
+uuid: fb21df88-f896-4a11-aa67-3b19904476c2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: formation_d9_site_branding
+theme: formation_d9
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

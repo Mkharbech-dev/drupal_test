@@ -1,0 +1,11 @@
+uuid: 5ec32997-8b95-4b94-8d33-9e3fb3796024
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.formation_zip
+id: media.formation_zip
+target_entity_type_id: media
+target_bundle: formation_zip
+default_langcode: site_default
+language_alterable: false

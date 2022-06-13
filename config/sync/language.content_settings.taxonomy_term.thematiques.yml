@@ -1,0 +1,16 @@
+uuid: 0ad9ce62-2af7-457d-b982-baf34fa5c4a6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thematiques
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.thematiques
+target_entity_type_id: taxonomy_term
+target_bundle: thematiques
+default_langcode: site_default
+language_alterable: false

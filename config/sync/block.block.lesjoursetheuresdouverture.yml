@@ -1,0 +1,21 @@
+uuid: 58e4ad80-2bac-4fc6-9f7f-73bd40482b99
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bartik
+id: lesjoursetheuresdouverture
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:6bfe47bd-173a-434a-85ea-32c5f342c684'
+settings:
+  id: 'block_content:6bfe47bd-173a-434a-85ea-32c5f342c684'
+  label: 'Les jours et heures d''ouverture'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

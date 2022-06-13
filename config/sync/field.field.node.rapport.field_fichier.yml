@@ -1,0 +1,27 @@
+uuid: 74f4a586-152c-4604-a03c-54164290cf86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichier
+    - node.type.rapport
+  module:
+    - file
+id: node.rapport.field_fichier
+field_name: field_fichier
+entity_type: node
+bundle: rapport
+label: Fichier
+description: 'Les fiches de rapport'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'Rapport-[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: '2 MB'
+  description_field: false
+field_type: file

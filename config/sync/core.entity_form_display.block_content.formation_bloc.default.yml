@@ -1,0 +1,43 @@
+uuid: 415510ad-1ca6-493d-ad08-a0709a190791
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.formation_bloc
+    - field.field.block_content.formation_bloc.field_taxo
+id: block_content.formation_bloc.default
+targetEntityType: block_content
+bundle: formation_bloc
+mode: default
+content:
+  field_taxo:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

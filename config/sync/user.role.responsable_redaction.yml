@@ -1,0 +1,256 @@
+uuid: 2fcab248-2023-4f8f-8e8a-be0fdd7a15b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.rapport.default
+    - filter.format.basic_html
+    - filter.format.format_formation
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.formation_zip
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.divers
+    - node.type.page
+    - node.type.rapport
+    - node.type.revue
+    - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.thematiques
+    - workflows.workflow.editorial
+    - workflows.workflow.formation_workflow
+  module:
+    - block
+    - block_content
+    - comment
+    - contact
+    - content_moderation
+    - content_translation
+    - contextual
+    - field_ui
+    - file
+    - filter
+    - image
+    - layout_builder
+    - locale
+    - media
+    - node
+    - path
+    - quickedit
+    - responsive_image
+    - scheduler
+    - search
+    - shortcut
+    - statistics
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+    - views_ui
+    - workbench
+    - workflows
+id: responsable_redaction
+label: 'Responsable rédaction'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access site reports'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'access workbench'
+  - 'administer account settings'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content translation'
+  - 'administer content types'
+  - 'administer display modes'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer permissions'
+  - 'administer responsive images'
+  - 'administer scheduler'
+  - 'administer search'
+  - 'administer shortcuts'
+  - 'administer statistics'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - 'administer workbench'
+  - 'administer workflows'
+  - 'bypass node access'
+  - 'change own username'
+  - 'configure all rapport node layout overrides'
+  - 'configure any layout'
+  - 'configure editable rapport node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create article content'
+  - 'create audio media'
+  - 'create content translations'
+  - 'create divers content'
+  - 'create document media'
+  - 'create formation_zip media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create rapport content'
+  - 'create remote_video media'
+  - 'create revue content'
+  - 'create terms in categories'
+  - 'create terms in tags'
+  - 'create terms in thematiques'
+  - 'create url aliases'
+  - 'create video media'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any divers content'
+  - 'delete any document media'
+  - 'delete any formation_zip media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any rapport content'
+  - 'delete any remote_video media'
+  - 'delete any revue content'
+  - 'delete any video media'
+  - 'delete article revisions'
+  - 'delete content translations'
+  - 'delete divers revisions'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own divers content'
+  - 'delete own document media'
+  - 'delete own formation_zip media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own rapport content'
+  - 'delete own remote_video media'
+  - 'delete own revue content'
+  - 'delete own video media'
+  - 'delete page revisions'
+  - 'delete rapport revisions'
+  - 'delete revue revisions'
+  - 'delete terms in categories'
+  - 'delete terms in tags'
+  - 'delete terms in thematiques'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any divers content'
+  - 'edit any document media'
+  - 'edit any formation_zip media'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any rapport content'
+  - 'edit any remote_video media'
+  - 'edit any revue content'
+  - 'edit any video media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own comments'
+  - 'edit own divers content'
+  - 'edit own document media'
+  - 'edit own formation_zip media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own rapport content'
+  - 'edit own remote_video media'
+  - 'edit own revue content'
+  - 'edit own video media'
+  - 'edit terms in categories'
+  - 'edit terms in tags'
+  - 'edit terms in thematiques'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert divers revisions'
+  - 'revert page revisions'
+  - 'revert rapport revisions'
+  - 'revert revue revisions'
+  - 'schedule publishing of nodes'
+  - 'select account cancellation method'
+  - 'switch shortcut sets'
+  - 'translate any entity'
+  - 'translate block_content'
+  - 'translate categories taxonomy_term'
+  - 'translate editable entities'
+  - 'translate interface'
+  - 'translate revue node'
+  - 'translate thematiques taxonomy_term'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use advanced search'
+  - 'use editorial transition a_valider'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition valide'
+  - 'use formation_workflow transition create_new_draft'
+  - 'use formation_workflow transition deuxieme_lecture'
+  - 'use formation_workflow transition premiere_lecture'
+  - 'use formation_workflow transition publication'
+  - 'use text format basic_html'
+  - 'use text format format_formation'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view divers revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view post access counter'
+  - 'view rapport revisions'
+  - 'view revue revisions'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view user email addresses'

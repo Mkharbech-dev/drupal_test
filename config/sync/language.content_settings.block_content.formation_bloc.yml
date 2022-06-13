@@ -1,0 +1,16 @@
+uuid: db3f3e06-3c59-4051-86d7-730f41409ff0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.formation_bloc
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.formation_bloc
+target_entity_type_id: block_content
+target_bundle: formation_bloc
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: dcd0f5ee-65b7-4276-8a63-bc3882ad9afa
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - formation_d9
+_core:
+  default_config_hash: VV9kqYMqLSoPSMw-XVpo0auKK0RfnbQTkqYPVQxqaV0
+id: formation_d9_help
+theme: formation_d9
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

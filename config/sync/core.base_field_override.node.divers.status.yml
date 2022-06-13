@@ -1,0 +1,22 @@
+uuid: 2a85f748-9614-409c-a9c3-543a38abed01
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.divers
+id: node.divers.status
+field_name: status
+entity_type: node
+bundle: divers
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

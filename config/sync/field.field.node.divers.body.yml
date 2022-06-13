@@ -1,0 +1,23 @@
+uuid: 310c2177-7443-48fd-a928-688214fe72f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.divers
+  module:
+    - text
+id: node.divers.body
+field_name: body
+entity_type: node
+bundle: divers
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

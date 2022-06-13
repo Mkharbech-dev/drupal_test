@@ -1,0 +1,22 @@
+uuid: 9dcb138d-edcd-4920-9577-73c5308c9386
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tara
+_core:
+  default_config_hash: cL11xuvgbDwRtGEQLBQ0vuywqHSwOo9oXtztdmgiTfk
+id: tara_breadcrumbs
+theme: tara
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''ariane'
+  label_display: '0'
+  provider: system
+visibility: {  }
