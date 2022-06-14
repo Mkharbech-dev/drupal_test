@@ -4,12 +4,24 @@ status: true
 dependencies:
   config:
     - block_content.type.formation_bloc
+    - field.field.block_content.formation_bloc.field_image
     - field.field.block_content.formation_bloc.field_taxo
+    - image.style.thumbnail
+  module:
+    - image
 id: block_content.formation_bloc.default
 targetEntityType: block_content
 bundle: formation_bloc
 mode: default
 content:
+  field_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_taxo:
     type: entity_reference_autocomplete
     weight: 1

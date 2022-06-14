@@ -1,23 +1,23 @@
-uuid: 649b6b4c-0666-4843-bd3f-8c45cfcc7226
+uuid: fb2fce80-3eed-4f20-aeac-0dc17a0a4923
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:022916f7-3ada-4800-9ebf-bbf9af96d65d'
+    - 'block_content:formation_bloc:a93251f3-fae7-4cc6-8a36-fa958c38935b'
   module:
     - block_content
     - system
   theme:
     - bartik
-id: bienvenue
+id: gateauauyaourt
 theme: bartik
 region: sidebar_first
-weight: -9
+weight: -8
 provider: null
-plugin: 'block_content:022916f7-3ada-4800-9ebf-bbf9af96d65d'
+plugin: 'block_content:a93251f3-fae7-4cc6-8a36-fa958c38935b'
 settings:
-  id: 'block_content:022916f7-3ada-4800-9ebf-bbf9af96d65d'
-  label: Bienvenue!
+  id: 'block_content:a93251f3-fae7-4cc6-8a36-fa958c38935b'
+  label: 'gateau au yaourt'
   label_display: visible
   provider: block_content
   status: true

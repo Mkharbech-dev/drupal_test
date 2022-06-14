@@ -1,23 +1,23 @@
-uuid: 649b6b4c-0666-4843-bd3f-8c45cfcc7226
+uuid: 3b1797c7-e4e2-43dc-9a11-dbacf95a3b7b
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:022916f7-3ada-4800-9ebf-bbf9af96d65d'
+    - 'block_content:basic:1b2bae56-face-47e5-aaa6-4d0f58283951'
   module:
     - block_content
     - system
   theme:
     - bartik
-id: bienvenue
+id: lemondeenmain
 theme: bartik
-region: sidebar_first
-weight: -9
+region: sidebar_second
+weight: 0
 provider: null
-plugin: 'block_content:022916f7-3ada-4800-9ebf-bbf9af96d65d'
+plugin: 'block_content:1b2bae56-face-47e5-aaa6-4d0f58283951'
 settings:
-  id: 'block_content:022916f7-3ada-4800-9ebf-bbf9af96d65d'
-  label: Bienvenue!
+  id: 'block_content:1b2bae56-face-47e5-aaa6-4d0f58283951'
+  label: 'le monde en main'
   label_display: visible
   provider: block_content
   status: true
