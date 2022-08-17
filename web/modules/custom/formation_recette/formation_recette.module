@@ -1,0 +1,20 @@
+<?php
+
+
+function formation_recette_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match){
+  if($route_name == 'help.page.formation_recette'){
+    $html = "<h2>Recette</h2>";
+    $html .= "<p>Ce module est crée pour la gestion des recettes</p>";
+    $html .= "<ul>";
+    $html .= "<li>option 1</li>";
+    $html .= "<li>option 2</li>";
+    $html .= "<li>option 3</li>";
+    $html .= "</ul>";
+    return $html;
+  }
+}
+
+function formation_recette_user_login($account){
+  \Drupal::messenger()->addMessage(t('Bonjour @nom', ['@nom' => $account->getDisplayName()]));
+}
+
